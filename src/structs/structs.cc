@@ -9,6 +9,8 @@ int main(void)
     Vec3 v = Vec3();
     Vec3 vprime = Vec3();
     Vec2 w = Vec2();
+    Vec2 w2 = Vec2();
+    Vec3 v3 = Vec3();
     
     cout << "-----Pass by value test-----" << endl;
     cout << "Original 3 vector:" << endl;
@@ -25,6 +27,20 @@ int main(void)
     set_vec(w, 1.0, 2.0);
     cout << "Original 2 vector after modification:" << endl;
     print_vec(w);
+
+    
+    cout << "-----Testing Operator Overloading  Vec2-----" << endl;
+    set_vec(w2, 3.0, 4.0);
+    print_vec(w2);
+    Vec2 sum = w2 + w;
+    print_vec(sum);
+       
+    cout << "-----Testing Operator Overloading Vec3-----" << endl;
+    v3 = set_vec(v3, 3.0, 4.0, 5.0);
+    print_vec(v3);
+    Vec3 sumVec3 = v3 + vprime;
+    print_vec(sumVec3);
+       
 
     return 0;
 }
@@ -57,3 +73,17 @@ void print_vec(const Vec2 &wr)
 }
 
 //TODO : Implement overloaded + operators
+Vec3 operator+(const Vec3 &c1, const Vec3 &c2) {
+    Vec3 sum;
+    sum.x = c1.x + c2.x;
+    sum.y = c1.y + c2.y;
+    sum.z = c1.z + c2.z;
+    return sum;
+};
+
+Vec2 operator+(const Vec2 &c1, const Vec2 &c2) {
+    Vec2 sum;
+    sum.x = c1.x + c2.x;
+    sum.y = c1.y + c2.y;
+    return sum;
+};
