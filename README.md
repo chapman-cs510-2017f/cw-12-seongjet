@@ -1,6 +1,6 @@
 # CS510 CW 12
 
-**Author(s):** **CHANGEME**
+**Author(s):** **Jet,, Seong**
 
 [![Build Status](https://travis-ci.org/chapman-cs510-2017f/cw-12-YOURNAME.svg?branch=master)](https://travis-ci.org/chapman-cs510-2017f/cw-12-YOURNAME)
 
