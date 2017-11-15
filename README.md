@@ -4,8 +4,6 @@
 
 [![Build Status](https://travis-ci.org/chapman-cs510-2017f/cw-12-YOURNAME.svg?branch=master)](https://travis-ci.org/chapman-cs510-2017f/cw-12-YOURNAME)
 
-**Due date:** 2016/11/29
-
 ## Specification
 
 **Note: Remember this is a C++ project.**
