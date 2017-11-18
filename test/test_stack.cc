@@ -11,22 +11,22 @@ int main(void) {
     s.push(3);
     std::cout << "Popping items off the stack and printing:" << std::endl;
     val = s.pop();
-    print(val);
+    std::cout <<val<< std::endl;
     std::cout << std::endl;
     val = s.pop();
-    print(val);
+    std::cout <<val<< std::endl;
     std::cout << std::endl;
     val = s.pop();
-    print(val);
+    std::cout <<val<< std::endl;
     std::cout << std::endl;
-    val = s.pop();
-    print(val);
+    //val = s.pop();
+    //std::cout <<val<< std::endl;
     std::cout << std::endl;
     std::cout << "Putting items on the stack: 4,5,6" << std::endl;
     s.push(4);
     s.push(5);
     s.push(6);
     std::cout << "Printing the stack:" << std::endl;
-    //s.print();
+    s.print();
     return 0;
 }
