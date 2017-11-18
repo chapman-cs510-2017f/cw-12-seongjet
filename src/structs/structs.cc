@@ -30,15 +30,19 @@ int main(void)
 
     
     cout << "-----Testing Operator Overloading  Vec2-----" << endl;
+    print_vec(w);
     set_vec(w2, 3.0, 4.0);
     print_vec(w2);
     Vec2 sum = w2 + w;
+    cout << "Sum of Two Vec2" << endl;
     print_vec(sum);
        
     cout << "-----Testing Operator Overloading Vec3-----" << endl;
+    print_vec(vprime);
     v3 = set_vec(v3, 3.0, 4.0, 5.0);
     print_vec(v3);
     Vec3 sumVec3 = v3 + vprime;
+    cout << "Sum of Two Vec3" << endl;
     print_vec(sumVec3);
        
 

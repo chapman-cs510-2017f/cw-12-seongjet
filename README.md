@@ -49,7 +49,9 @@ Complete the following exercises, saving your solutions in the indicated files.
 
 Analyze in this section what you found useful about this assignment in your own words. Include any lingering questions or comments that you may have.
 
-**CHANGEME**
+1. **C++ is much easier to handle a string comparing to C, because a string is a built-in type in C++.**
+2. **Namespace is a useful tool to organize codes. It is helpful to manage a bigger project because it groups related codes into meaningful names.**
+3. **C++ develops a struct to more bigger tool, class. The instantiated object contains member attributes and methods, which is a smart way to handle data and manipulate the states of the data.**
 
 ## Honor Pledge
 
