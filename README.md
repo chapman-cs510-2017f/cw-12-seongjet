@@ -1,8 +1,8 @@
 # CS510 CW 12
 
-**Author(s):** **CHANGEME**
+**Author(s):** **Jet, Seong**
 
-[![Build Status](https://travis-ci.org/chapman-cs510-2017f/cw-12-YOURNAME.svg?branch=master)](https://travis-ci.org/chapman-cs510-2017f/cw-12-YOURNAME)
+[![Build Status](https://travis-ci.org/chapman-cs510-2017f/cw-12-seongjet.svg?branch=master)](https://travis-ci.org/chapman-cs510-2017f/cw-12-seongjet)
 
 ## Specification
 
@@ -60,4 +60,4 @@ I pledge that all the work in this repository is my own with only the following 
 
 Signed,
 
-**YOURNAME**
+**Jet Li, Seong Lee**
