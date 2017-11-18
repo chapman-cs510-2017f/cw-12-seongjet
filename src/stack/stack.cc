@@ -51,7 +51,7 @@ void Stack::push(SValue val)
     // other references to this block of memory, so C++ is free to delete
     // at will
     //
-    std::unique_ptr<Node> new_node_ptr(new Node());
+    std::unique_ptr<Node> new_node_ptr(new Node()); //node is a private properity of class stack
 
     // Set the fields just as we would with a normal pointer
     new_node_ptr->data = val;
@@ -76,6 +76,7 @@ SValue Stack::pop()
     {
         // TODO: Fix this by throwing an exception properly
         // https://www.tutorialspoint.com/cplusplus/cpp_exceptions_handling.htm
+        throw "Stack is empty!";
         return -1;
     }
 
@@ -88,9 +89,20 @@ SValue Stack::pop()
 }
 
 
-// TODO: Implementation of empty method
-// bool Stack::empty() const {}
+// Check if the stack empty
+bool Stack::empty() const 
+{
+    return (this->head==nullptr);
+}
 
 
-// TODO: Implementation of print method
-// void Stack::print() {}
+// print the content of stack one by one
+void Stack::print() const
+{
+    Node* head = this->head.get();
+    while(head != nullptr){
+        SValue val = head->data;
+        head = head->next.get();
+        std::cout << val << std::endl;
+    }
+}
