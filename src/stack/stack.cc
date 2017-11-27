@@ -1,5 +1,6 @@
 #include <iostream>
 #include "stack.h"
+#include <cstdint>
 
 // TODO: Implementation of print for SValue
 // void print(SValue) {}
@@ -51,6 +52,13 @@ void Stack::push(SValue val)
     // other references to this block of memory, so C++ is free to delete
     // at will
     //
+    
+    if (this->depth >=  SIZE_MAX)
+    {
+        std::cout << "depth cannot increase beyond the numerical limit" << std::endl;
+        return;
+    }
+    
     std::unique_ptr<Node> new_node_ptr(new Node()); //node is a private properity of class stack
 
     // Set the fields just as we would with a normal pointer
@@ -65,6 +73,8 @@ void Stack::push(SValue val)
     // automatically deallocated, since it is a unique_ptr
     // Again, we must move the new pointer uniquely to become the new head
     this->head = std::move(new_node_ptr);
+    
+    this->depth += 1;
 }
 
 
@@ -93,6 +103,12 @@ SValue Stack::pop()
 bool Stack::empty() const 
 {
     return (this->head==nullptr);
+}
+
+// Check if the stack full
+bool Stack::full() const 
+{
+    return (this->depth==SIZE_MAX);
 }
 
 

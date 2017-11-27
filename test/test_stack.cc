@@ -19,8 +19,8 @@ int main(void) {
     val = s.pop();
     std::cout <<val<< std::endl;
     std::cout << std::endl;
-    //val = s.pop();
-    //std::cout <<val<< std::endl;
+    val = s.pop();
+    std::cout <<val<< std::endl;
     std::cout << std::endl;
     std::cout << "Putting items on the stack: 4,5,6" << std::endl;
     s.push(4);

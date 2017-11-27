@@ -119,6 +119,9 @@ public:
     // "true" and "false" (equivalent to ints 1 and 0, which is opposite
     // to the C convention, where 0 is true and anything else is false)
     bool empty() const;
+    
+    // Full check method
+    bool full() const;
 
     // Print method
     void print() const;
