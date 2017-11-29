@@ -3,7 +3,10 @@
 #include <cstdint>
 
 // TODO: Implementation of print for SValue
-// void print(SValue) {}
+void print(SValue val)
+{
+    std::cout << val << std::endl;
+}
 
 // Implementation of default constructor
 Stack::Stack()
